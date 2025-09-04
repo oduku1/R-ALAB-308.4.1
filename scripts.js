@@ -65,8 +65,8 @@ let average_age = total_age / newObj.length;
 console.log(Object.keys(newObj[0]))
 let csv_2 = []
 
-let headers = Object.keys(newObj[0]);   // ✅ define headers
-// Capitalize first letter so it matches "ID,Name,Occupation,Age"
+let headers = Object.keys(newObj[0]);   
+
 csv_2.push(headers.map(h => h.charAt(0).toUpperCase() + h.slice(1)).join(","))
 console.log(headers.join(","))
 
